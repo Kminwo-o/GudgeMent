@@ -16,7 +16,7 @@ spring:
     port: 587
     username: coala1080@gmail.com
     # plz not update, don't remember
-    password: wousleleumelwfft
+    password: [password]
     properties:
       mail:
         smtp:
@@ -31,7 +31,7 @@ spring:
 
   redis:
     host: myredis
-    port: 6379
+    port: [port주소]
 
   main:
     allow-bean-definition-overriding: true
@@ -48,9 +48,9 @@ spring:
 
   # datasource
   datasource:
-    url: jdbc:mysql://database-1.cjfyk8ntjeyl.ap-northeast-2.rds.amazonaws.com:3306/gudgement?useSSL=false&serverTimezone=Asia/Seoul&useUnicode=true&characterEncoding=utf8
+    url: [db주소소]
     username: gudgement
-    password: d106gudgement
+    password: [password]
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   # Jpa
@@ -78,12 +78,12 @@ spring:
     client:
       registration:
         kakao:
-          client-id: 4cd45261b839373b375e0766220b3428
+          client-id: [클라이언트 ID]
           redirect-uri: http://j9d106.p.ssafy.io:8080/
           client-authentication-method: POST
           authorization-grant-type: authorization_code
           scope: account_email
-          client-secret: q9QbZnp79iKuzIPgFxLhTU0xoqx0vArI
+          client-secret: [클라이언트 Secret]
           token-uri: https://kauth.kakao.com/oauth/token
           user-info-uri: https://kapi.kakao.com
 
